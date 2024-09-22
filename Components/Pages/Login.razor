@@ -24,13 +24,13 @@
 
         <div class="mb-3"> <!-- UserID -->
             <label for="inputUserId" class="form-label">User ID</label>
-            <InputText class="form-control" id="inputUserId" @bind-Value="loginUser.UserId" />
+            <InputText class="form-control" id="inputUserId" @bind-Value="loginUser.UserId" placeholder="Enter your user ID" />
             <ValidationMessage For="@(() => loginUser.UserId)" class="validation-message" />
         </div>
 
         <div class="mb-3"> <!-- Password -->
             <label for="inputPassword" class="form-label">Password</label>
-            <InputText type="password" class="form-control" id="inputPassword" @bind-Value="loginUser.Password" />
+            <InputText type="password" class="form-control" id="inputPassword" @bind-Value="loginUser.Password" placeholder="Enter your password" />
             <ValidationMessage For="@(() => loginUser.Password)" class="validation-message" />
         </div>
     
